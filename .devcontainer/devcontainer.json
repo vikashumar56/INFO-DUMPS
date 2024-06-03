@@ -8,7 +8,7 @@
       "addOPAM": false,
       "installOhMyZsh": false
     },
-    "ghcr.io/devcontainers/features/make:1": {}
+
   },
   "postCreateCommand": "apt-get update && apt-get install -y build-essential",
   "customizations": {

@@ -46,8 +46,9 @@
         "donjayamanne.python-environment-manager",
         "ms-python.python",
         "voldemortensen.rainbow-tags",
-        "mhutchie.git-graph"
-
+        "mhutchie.git-graph",
+        "shardulm94.trailing-spaces",
+        "donjayamanne.githistory"
 
 
       ],

@@ -1,5 +1,16 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "installZsh": false,
+      "addGitAliases": false,
+      "addGitLFS": false,
+      "addOPAM": false,
+      "installOhMyZsh": false
+    },
+    "ghcr.io/devcontainers/features/make:1": {}
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y build-essential",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -20,7 +31,6 @@
         "HookyQR.beautify",
         "aaron-bond.better-comments",
         "alefragnani.Bookmarks",
-        "ms-vscode.cpptools",
         "danielpinto8zz6.c-cpp-compile-run",
         "wesbos.theme-cobalt2",
         "formulahendry.code-runner",
@@ -42,18 +52,24 @@
         "voldemortensen.rainbow-tags",
         "mhutchie.git-graph",
         "shardulm94.trailing-spaces",
-        "donjayamanne.githistory"
+        "donjayamanne.githistory",
+        "ms-vscode.cpptools-extension-pack"
+        
       ],
       "settings": {
         "C_Cpp.autocomplete": "disabled",
         "C_Cpp.clang_format_fallbackStyle": "{ AllowShortFunctionsOnASingleLine: Empty, BraceWrapping: { AfterCaseLabel: true, AfterControlStatement: true, AfterFunction: true, AfterStruct: true, BeforeElse: true, BeforeWhile: true }, BreakBeforeBraces: Custom, ColumnLimit: 100, IndentCaseLabels: true, IndentWidth: 4, SpaceAfterCStyleCast: true, TabWidth: 4 }",
         "C_Cpp.codeFolding": "disabled",
-        "C_Cpp.debugShortcut": false,
         "C_Cpp.dimInactiveRegions": false,
         "C_Cpp.doxygen.generateOnType": false,
-        "C_Cpp.enhancedColorization": "enabled",
-        "C_Cpp.errorSquiggles": "disabled",
         "C_Cpp.formatting": "clangFormat",
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.intelliSenseMode": "gcc-x64",
+        "C_Cpp.default.cppStandard": "c++17",
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.debugShortcut": true,
+        "C_Cpp.enhancedColorization": "enabled",
+        "C_Cpp.errorSquiggles": "enabled",
         "Prettier-SQL.keywordCase": "upper",
         "[python]": {
           "editor.defaultFormatter": "ms-python.autopep8"

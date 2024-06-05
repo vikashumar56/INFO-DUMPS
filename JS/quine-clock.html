@@ -1,15 +1,33 @@
 <script>
-  (r=()=>setInterval(t=>{for(j=o="\n",y=5;y--;document.body["inn"+
-  "erHTML"]="<pre>&lt"+(S="script>\n")+o+"\n\n&lt/"+S)for(x=-01;
-  63-!y>x++;o+=`(r=${r})()`[j++].fontcolor(c?"#FF0":"#444"))c=x/2
-  %4<3&&parseInt("odRFacb67o2vi5gmOZmwFNteohbOh3sw".slice(i="9"<(
-  D=Date()[16+(x/8|0)])?30:D*3,i+3),36)&1<<(x/2|0)%4+3*y},100))()
+  try {
+    (r=()=>setInterval(t=>{for(j=o="\n",y=5;y--;document.body["inn"+
+    "erHTML"]="<pre>&lt"+(S="script>\n")+o+"\n\n&lt/"+S)for(x=-01;
+    63-!y>x++;o+=`(r=${r})()`[j++].fontcolor(c?"#FF0":"#444"))c=x/2
+    %4<3&&parseInt("odRFacb67o2vi5gmOZmwFNteohbOh3sw".slice(i="9"<(
+    D=Date()[16+(x/8|0)])?30:D*3,i+3),36)&1<<(x/2|0)%4+3*y},100))()
+  } catch (e) {
+    console.error("JavaScript Error:", e);
+  }
 </script>
 
 <title>Qlock - A JavaScript Quine Clock</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono" rel="stylesheet">
+<script>
+  WebFont.load({
+    google: {
+      families: ['Fira Mono']
+    },
+    callback: function () {
+      console.log("Fira Mono font loaded successfully.");
+    },
+    timeout: 3000, // Set a timeout of 3 seconds
+    inactive: function () {
+      console.error("Fira Mono font failed to load.");
+    }
+  });
+</script>
 
 <style>
   body {
@@ -26,6 +44,10 @@
   pre {
     font-family: "Fira Mono", monospace;
     text-align: center;
+    position: relative; /* Reset position */
+    transform: none; /* Reset transform */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
   }
 
   @media screen and (min-width: 900px) {

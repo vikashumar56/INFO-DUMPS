@@ -5,7 +5,7 @@
 // The code below has been refactored to remove code golf tricks, and comments
 // have been added to explain what it's doing.
 //
-// IFFE (immediately invoked function expression) that sets an interval to
+// IIFE (immediately invoked function expression) that sets an interval to
 // execute logic every 100 milliseconds. The parameter `n` is never used and
 // is apparently included so we can use the shorter `=>` function notation
 // instead of the more verbose `function()`.

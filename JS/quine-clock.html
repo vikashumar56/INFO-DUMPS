@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quine Clock</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <pre id="clock"></pre>
+  <script>
+    (quine = n => setInterval(t => {
+      let displayString = "\n";
+      let scriptTag = "script>\n";
+      let characterSprites = [
+        31599,
+        19812,
+        14479,
+        31207,
+        23524,
+        29411,
+        29679,
+        30866,
+        31727,
+        31719,
+        1040,
+      ];
+
+      let sourceCode = `(r=${quine})()`;
+      sourceCode = sourceCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '').replace(/\s+/gm, '');
+
+      let characterIndex = 0;
+
+      for (let y = 4; y >= 0; y--) {
+        for (let x = 0; x < 63; x++) {
+          let arrayIndex = Math.floor(x / 8);
+          let character = Date()[16 + arrayIndex];
+          character = (character < 10 ? character : 10);
+          let sprite = characterSprites[character];
+          let bitmask = 1 << (x / 2 % 4 + 3 * y);
+          let insideCharacter = (x / 2 % 4 < 3);
+          let pixel = insideCharacter && (sprite & bitmask);
+          let color = pixel ? '#FF0' : "#444";
+          displayString += sourceCode[characterIndex++].fontcolor(color);
+        }
+        displayString += "\n";
+      }
+
+      document.body.innerHTML = (
+        "<pre>" +
+        "&lt" + scriptTag +
+        displayString +
+        "\n" +
+        "&lt/" + scriptTag
+      );
+    }, 100))()
+  </script>
+</body>
+</html>

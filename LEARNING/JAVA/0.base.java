@@ -15,11 +15,14 @@ class base {
 
 //Code -> Compiler -> ByteCode -> JRE -> Native Code -> Output
 
-/*James Gosling 1995 at Sun Microsystems and later
+/*
+James Gosling 1995 at Sun Microsystems and later
 acquired by Oracle in 2010, Oak after oak tree
-outside office and later java after java coffee.*/
+outside office and later java after java coffee.
+*/
 
-/*Primitive data type: store simple values, and dont have any members in it contrast to reference
+/*
+Primitive data type: store simple values, and dont have any members in it contrast to reference
         byte age = 30;
         long viewsCount = 3_123_456_789L
         float price = 10.99F
@@ -27,10 +30,22 @@ outside office and later java after java coffee.*/
         boolean isEligible = false
         short year = 2022
         int x = 10
-        double gpa = 3.7*/
+        double gpa = 3.7
 
-/*Reference data type: to store complex objects like data, mail messages
+*/
+
+/*
+Reference data type: to store complex objects like data, mail messages.
         Date now = new Date();
         now.getTime()
-
+        String message = new String("Hello World")
+        String message = "Hello World" + "!!";
+        System.out.println(message...
+                                .lengthOf("")
+                                .indexOf(""))
+                                ...any many more
+        now this ability of accessing members is
+        called encapsulation and only possible in
+        reference data type.
+*/
 

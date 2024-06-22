@@ -80,6 +80,8 @@ Constants
     final float PI = 3.14F; - now further in the program we cannot assign any new value to PI(these are represented in ALL CAPS)
  */
 /*
-Arithmetic Expressions
-    
+Arithmetic Expressions - Piece of code that produces a value
+    int result = 10 / 3 - result in a whole number
+Or
+    double result = (double)10 / (double)3 - results upto a decimal number
 */

@@ -182,7 +182,11 @@ Reading Input
     byte age = scanner.nextByte();
     System.out.println("You are " + age);
 
-    System.out
+    System.out.print("Name: ");
+    String name = scanner.next(); - this will read only word
+Or
+    String name = scanner.nextLine(); - this will read the entire line
+    System.out.println("You are " + name);
     scanner.close(); - this is important to close the scanner after use to prevent memory leaks
 
 

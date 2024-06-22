@@ -124,7 +124,11 @@ Math.max(5,10) - returns maximum value
 Math.min(5,10) - returns minimum value
 Math.pow(2,3) - returns 2 to the power of 3
 Math.sqrt(16) - returns square root of 16
+
 Math.random() - returns a random number between 0 and 1 - in this we have to assign the value it results to a double or float variable not int
+Or
+int result = (int)
+
 Math.round(5.7) - returns the nearest integer
 Math.ceil(5.7) - returns the smallest integer that is greater than or equal to the argument
 Math.floor(5.7) - returns the largest integer that is less than or equal to the

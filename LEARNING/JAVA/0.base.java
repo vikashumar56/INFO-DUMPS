@@ -77,4 +77,8 @@ Or
  */
  /*
 Constants
+    final float PI = 3.14F; - now further in the program we cannot assign any new value to PI(these are represented in ALL CAPS)
  */
+/*
+
+*/

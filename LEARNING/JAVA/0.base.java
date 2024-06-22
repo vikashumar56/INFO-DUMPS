@@ -185,9 +185,7 @@ Reading Input
     System.out.print("Name: ");
     String name = scanner.next(); - this will read only word
 Or
-    String name = scanner.nextLine(); - this will read the entire line
+    String name = scanner.nextLine().trim(); - this will read the entire line and trim any spaces
     System.out.println("You are " + name);
     scanner.close(); - this is important to close the scanner after use to prevent memory leaks
-
-
 */

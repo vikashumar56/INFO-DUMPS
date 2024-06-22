@@ -127,9 +127,37 @@ Math.sqrt(16) - returns square root of 16
 
 Math.random() - returns a random number between 0 and 1 - in this we have to assign the value it results to a double or float variable not int
 Or
-int result = (int)
+int result = (int) (Math.random() * 100);
+System.out.println(result); - this will give a random number between 0 and 99
 
 Math.round(5.7) - returns the nearest integer
 Math.ceil(5.7) - returns the smallest integer that is greater than or equal to the argument
 Math.floor(5.7) - returns the largest integer that is less than or equal to the
+*/
 
+/*
+String class
+String x = "Hello";
+String y = "Hello";
+System.out.println(x == y); - returns true because they are pointing to the same memory location
+String x = new String("Hello");
+String y = new String("Hello");
+System.out.println(x == y); - returns false because they are pointing to different memory locations
+System.out.println(x.equals(y)); - returns true because they have the same value
+String x = "Hello";
+String y = x;
+System.out.println(x == y); - returns true because they are pointing to the same memory location
+String y = x.toUpperCase();
+System.out.println(y); - returns "HELLO"
+String y = x.concat("World");
+System.out.println(y); - returns "HelloWorld"
+String y = x.substring(2);
+System.out.println(y); - returns "llo"
+
+*/
+
+/*
+Formatting Numbers
+
+
+*/

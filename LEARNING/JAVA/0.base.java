@@ -176,4 +176,8 @@ Or
 
 /*
 Reading Input
+    Scanner scanner = new Scanner(System.in);
+    byte age = scanner.nextByte();
+    System.out.println("You are " + age);
 
+*/

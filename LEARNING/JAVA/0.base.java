@@ -182,4 +182,8 @@ Reading Input
     byte age = scanner.nextByte();
     System.out.println("You are " + age);
 
+    System.out
+    scanner.close(); - this is important to close the scanner after use to prevent memory leaks
+
+
 */

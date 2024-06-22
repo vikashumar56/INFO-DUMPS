@@ -160,12 +160,7 @@ System.out.println(y); - returns "llo"
 Formatting Numbers
     NumberFormat currency = new NumberFormat(); - now this line is not correct since "NumberFormat" is a ABSTRACT so we cannot
     create any new instance out of it instead we write
-    NumberFormat currency = NumberFormat.getPercentInstance();
-    String result = percent.format(number: 123.46);
-    
-
-
-
-
+    NumberFormat currency = NumberFormat.getCurrencyInstance();
+    String result = currency.format(number: 123.46);
 
 */

@@ -163,6 +163,17 @@ Formatting Numbers
     NumberFormat currency = NumberFormat.getCurrencyInstance();
     String result = currency.format(number: 123.46);
 Or
-    
+    String result = NumberFormat.getPercentInstance().format(number: 0.1);
+Or
+    String result = NumberFormat.getIntegerInstance().format(number: 123);
 
+    Now Similar to NumberFormat we have another abstract i.e. DecimalFormat
+
+    DecimalFormat decimalFormat = new DecimalFormat("#.##"); - this will format the number to have at most two decimal places
+    String result = decimalFormat.format(number: 123.456);
+    System.out.println(result); - returns "123.46"
 */
+
+/*
+Reading Input
+

@@ -177,6 +177,8 @@ Or
 /*
 Reading Input
     Scanner scanner = new Scanner(System.in);
+    System.out.print("Age: ") - notice the print instead of println now the diff between these two is the former initiates in the same line
+    and the latter initiates a new line
     byte age = scanner.nextByte();
     System.out.println("You are " + age);
 

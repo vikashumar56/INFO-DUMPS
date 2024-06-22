@@ -75,7 +75,8 @@ Or
     System.out.println(scores.length);
     System.out.println(Arrays.deepToString(scores));
  */
- /*
+
+/*
 Constants
     final float PI = 3.14F; - now further in the program we cannot assign any new value to PI(these are represented in ALL CAPS)
  */
@@ -93,6 +94,14 @@ System.out.println(x); - produces 1
 System.out.println(y); - produces 1 - because first it assign the x value to the y variable and then increments it
 System.out.println(z); - produces 2 - in this it first increments the value of x and then assigns it to z
 x = x + 2; or x+=2; - both are same but in the latter since the operators are combined they are called Augmented or Compounded Operators
+*/
 
-Order
+/*
+TypeCasting
+    short x = 1;
+    int y = x + 2; - this is called widening
+    primitive conversion or Implicit casting or
+    Automatic Casting so byte can automatically be
+    converted to short, int, long, float, double 
+
 */

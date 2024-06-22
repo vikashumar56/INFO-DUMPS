@@ -101,7 +101,8 @@ TypeCasting
     short x = 1;
     int y = x + 2; - this is called widening
     primitive conversion or Implicit casting or
-    Automatic Casting so byte can automatically be
-    converted to short, int, long, float, double 
+    Automatic Casting without losing any data so
+    byte can automatically be converted to
+    short > int > long > float > double
 
 */

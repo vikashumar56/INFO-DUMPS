@@ -110,9 +110,9 @@ TypeCasting
     explicit casting or manual casting
 
     String x = "1";
-    int y = Integer.parseInt(x); - this is called parsing
+    int y = Integer.parseInt(x) + 2; - this is called parsing
     String x = "1.1";
-    double y = Double.parseDouble(x); - this is for double
+    double y = Double.parseDouble(x) + 2; - this is for double
     And Similarly there are many other for boolean,
     byte, short, long, float
 

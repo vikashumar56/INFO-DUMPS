@@ -84,4 +84,13 @@ Arithmetic Expressions - Piece of code that produces a value
     int result = 10 / 3 - result in a whole number
 Or
     double result = (double)10 / (double)3 - results upto a decimal number
+
+Increment i.e. x++ or ++x
+int x = 5;
+int y = x++;
+int z = ++x;
+System.out.println(x); - produces 5
+System.out.println(y); - produces 5 - because first it assign the x value to the y variable and then increments it
+System.out.println(z); - produces 6 - in this it first increments the value of x and then assigns it to z
+
 */

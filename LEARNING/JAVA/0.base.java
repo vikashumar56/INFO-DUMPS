@@ -104,11 +104,17 @@ TypeCasting
     Automatic Casting without losing any data so
     byte can automatically be converted to
     short > int > long > float > double
-    char can automatically be converted to
-    int > long > float > double
     boolean cannot be converted to any other primitive type
     double x = 1.1;
     int y = (int)x + 2; - this is called narrowing
     explicit casting or manual casting
+
+    String x = "1";
+    int y = Integer.parseInt(x); - this is called parsing
+    String x = "1.1";
+    double y = Double.parseDouble(x); - this is for double
+    And Similarly there are many other for boolean,
+    byte, short, long, float
+
 
 */

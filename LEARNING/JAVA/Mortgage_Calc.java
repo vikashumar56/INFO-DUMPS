@@ -1,3 +1,4 @@
+import 
 class Mortgage_Calc {
 /* Program to create a Mortgage calculator which will take Principal Amount, Annual Interest rate
 and Period in years as input from the user and calculate the monthly payment.
@@ -9,7 +10,7 @@ n is the number of payments.
         public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the Prinicipal Amount: ");
-        
+
     }
 }
 

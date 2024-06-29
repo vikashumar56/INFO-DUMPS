@@ -9,24 +9,21 @@ int main()
     arr1[3] += 10;
     arr1[4] = 10;
 
-    cout << arr1[3];
+    cout << arr1[3] << endl;
 
     // 2D Array
-    int arr2[3][5];
+    int arr2[3][5]; // Array of 15 integers
+    srand(time(0)); // seed the random number generator
+
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cin >> arr2[i][j];
+            arr2[i][j] = rand() % 100; // generates a random number between 0 and 99
         }
     }
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 5; j++)
-        {
-            cout << arr2[i][j] << " " << endl;
-        }
-    }
+
+    cout << arr2[1][3] << endl;
 
     return 0;
 }

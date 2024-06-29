@@ -12,6 +12,21 @@ int main()
     cout << arr1[3];
 
     // 2D Array
+    int arr2[3][5];
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            cin >> arr2[i][j];
+        }
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            cout << arr2[i][j] << " " << endl;
+        }
+    }
 
     return 0;
 }

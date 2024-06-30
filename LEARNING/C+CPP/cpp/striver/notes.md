@@ -24,3 +24,10 @@ while (!(cin >> value)) {
 
 
 By incorporating input validation and error handling, you can make your program more robust and user-friendly.
+
+
+ERRORS:
+
+In function ‘int mini(int, int)’:
+jspwTest.cpp:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+   17 | }

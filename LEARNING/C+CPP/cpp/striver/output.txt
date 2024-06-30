@@ -4,5 +4,12 @@
 Original value: 10
 Sikash
 Original string: Vikash
+17 
+18 
+25 
+49 
+78 
 Before swap: x = 5, y = 10
 After swap: x = 10, y = 5
+Value inside function 167
+Value inside main function 167

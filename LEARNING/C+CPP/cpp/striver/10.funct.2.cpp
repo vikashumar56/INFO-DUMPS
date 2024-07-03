@@ -48,7 +48,7 @@ void passArray(int arr2[], int n)
 
 int main()
 {
-    // pass by value
+    // pass by valued
     int num = 10;
     passValue(num);
     cout << "Original value: " << num << endl;

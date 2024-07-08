@@ -10,28 +10,18 @@
     },
 
   },
-  "postCreateCommand": "apt-get update && apt-get install -y build-essential",
+  "postCreateCommand": "[ ! $(dpkg -l build-essential | grep -q '^ii') ] && apt-get update && apt-get install -y build-essential",
   "customizations": {
     "vscode": {
       "extensions": [
         "inferrinizzard.prettier-sql-vscode",
         "mathematic.vscode-pdf",
-        "ms-azuretools.vscode-docker",
-        "ms-python.autopep8",
-        "ms-python.python",
-        "ms-vscode.cpptools",
-        "ms-vscode.hexeditor",
-        "ms-vsliveshare.vsliveshare",
-        "redhat.java",
-        "vscjava.vscode-java-debug",
-        "vsls-contrib.gitdoc",
         "Blackboxapp.blackbox",
         "usernamehw.errorlens",
         "formulahendry.auto-rename-tag",
         "HookyQR.beautify",
         "aaron-bond.better-comments",
         "alefragnani.Bookmarks",
-        "danielpinto8zz6.c-cpp-compile-run",
         "wesbos.theme-cobalt2",
         "formulahendry.code-runner",
         "streetsidesoftware.code-spell-checker",
@@ -43,18 +33,9 @@
         "vincaslt.highlight-matching-tag",
         "wix.vscode-import-cost",
         "oderwat.indent-rainbow",
-        "moalamri.inline-fold",
-        "ritwickdey.LiveServer",
         "pnp.polacode",
         "esbenp.prettier-vscode",
-        "donjayamanne.python-environment-manager",
-        "ms-python.python",
-        "voldemortensen.rainbow-tags",
-        "mhutchie.git-graph",
-        "shardulm94.trailing-spaces",
-        "donjayamanne.githistory",
-        "ms-vscode.cpptools-extension-pack"
-        
+        "shardulm94.trailing-spaces"    
       ],
       "settings": {
         "C_Cpp.autocomplete": "disabled",

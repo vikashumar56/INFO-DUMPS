@@ -10,7 +10,7 @@
     },
 
   },
-  "postCreateCommand": "[ ! $(dpkg -l build-essential | grep -q '^ii') ] && apt-get update && apt-get install -y build-essential",
+  "postCreateCommand": "[! $(dpkg -l build-essential | grep -q '^ii') ] && sudo apt-get update && sudo apt-get install -y build-essential",
   "customizations": {
     "vscode": {
       "extensions": [
